@@ -21,7 +21,7 @@
 <body class="font-sans antialiased" style="font-family: 'Quicksand', sans-serif">
 <x-jet-banner/>
 
-<div class="min-h-screen bg-gray-200">
+<div class="min-h-screen bg-gray-200 ">
     @livewire('navigation-menu')
 
     <!-- Page Heading -->
@@ -34,7 +34,7 @@
     @endif
 
     <!-- Page Content -->
-    <main>
+    <main class="sm:py-12 sm:px-4">
         {{ $slot }}
     </main>
 </div>

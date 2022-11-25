@@ -17,7 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
+            $table->decimal('price_monthly');
+            $table->decimal('price_annually');
             $table->text('description');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
