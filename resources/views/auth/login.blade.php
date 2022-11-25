@@ -9,8 +9,8 @@
 
 
 
-        <div class="bg bg-gray-200 h-screen">
-            <section class="h-full gradient-form  md:h-screen max-w-7xl mx-auto">
+        <div class="bg bg-gray-200 min-h-screen">
+            <section class="h-full gradient-form  md:min-h-screen max-w-7xl mx-auto">
                 <div class="container py-12 px-6 h-full mx-auto">
                     <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
                         <div class="xl:w-10/12">
@@ -38,23 +38,12 @@
 
                                                 </div>
                                                 <div class="text-center pt-1 mb-12 pb-1">
-                                                    <button
-                                                        class="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
-                                                        data-mdb-ripple="true"
-                                                        data-mdb-ripple-color="light"
-                                                        style="
-                            background: linear-gradient(
-                              to right,
-                              #ee7724,
-                              #d8363a,
-                              #dd3675,
-                              #b44593
-                            );
-                          "
+                                                    <x-jet-button
+
                                                     >
                                                         Log in
-                                                    </button>
-                                                    <a class="text-gray-500" href="#!">Forgot password?</a>
+                                                    </x-jet-button>
+                                                    <a class="text-gray-500" href="{{route('password.request')}}">Forgot password?</a>
                                                 </div>
                                                 <div class="flex items-center justify-between pb-6">
                                                     <p class="mb-0 mr-2">Don't have an account?</p>

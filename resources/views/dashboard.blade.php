@@ -6,14 +6,7 @@
     </x-slot>
 
     <div class="py-12">
-        <!-- hero   -->
-        <div class="container mx-auto py-12 text-center">
-            <h1
-                class="mb-4 sm:mb-8 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                Welcome Back, Suraj!</h1>
-            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">It is your
-                dashboard! Here you can manage your profile, subscriptions and access available products.</p>
-        </div>
+        @include('partials.dashboard.hero')
 
 
         <!-- cards -->
@@ -21,7 +14,8 @@
             <div
                 class="p-6 max-w-xl bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <h5 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Active products</h5>
+                    <h5 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Active
+                        products</h5>
                 </a>
                 <div class="text-5xl font-bold p-4">
                     3
@@ -287,8 +281,10 @@
         <div class="container mx-auto py-12 text-center">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
                 Available tools of mega plan</h1>
-            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Aspernatur optio non voluptas error quasi neque voluptate! Cum
+            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem
+                ipsum
+                dolor sit amet consectetur adipisicing elit. Aspernatur optio non voluptas error quasi neque voluptate!
+                Cum
                 ullam quam, quia quis accusamus tenetur magni voluptas dignissimos, officia unde, pariatur enim.</p>
             <div>
 
@@ -485,8 +481,10 @@
             <h1
                 class="text-orange-600 mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
                 We Offer</h1>
-            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Aspernatur optio non voluptas error quasi neque voluptate! Cum
+            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem
+                ipsum
+                dolor sit amet consectetur adipisicing elit. Aspernatur optio non voluptas error quasi neque voluptate!
+                Cum
                 ullam quam, quia quis accusamus tenetur magni voluptas dignissimos, officia unde, pariatur enim.</p>
 
 
@@ -580,8 +578,10 @@
                     </li>
                 </ul>
                 <button type="button"
-                        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 -blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
-                    plan</button>
+                        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 -blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
+                    Choose
+                    plan
+                </button>
             </div>
             <div
                 class="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 hover:scale-110 scale-105 transform duration-150">
@@ -674,8 +674,10 @@
                     </li>
                 </ul>
                 <button type="button"
-                        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 -blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
-                    plan</button>
+                        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 -blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
+                    Choose
+                    plan
+                </button>
             </div>
             <div
                 class="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 hover:scale-105 transform duration-150">
@@ -768,27 +770,29 @@
                     </li>
                 </ul>
                 <button type="button"
-                        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 -blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
-                    plan</button>
+                        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 -blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
+                    Choose
+                    plan
+                </button>
             </div>
 
 
         </div>
 
 
-
-
         <div class="container mx-auto py-12 text-center">
 
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
                 instructions or warnings </h1>
-            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem ipsum
+            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem
+                ipsum
                 dolor sit amet consectetur adipisicing elit. Aspernatur optio non v
                 <!-- cards -->
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <div
                     class="relative flex flex-col bg-clip-border bg-white text-gray-700 rounded-2xl shadow-lg shadow-gray-500/10">
-                    <div class="p-6 px-8 text-center"><button
+                    <div class="p-6 px-8 text-center">
+                        <button
                             class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-12 max-w-[48px] h-12 max-h-[48px] text-sm bg-gradient-to-tr from-blue-600 to-blue-400 text-white shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40 active:opacity-[0.85] pointer-events-none mb-6 rounded-full"
                             type="button"><span
                                 class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"><svg
@@ -802,14 +806,16 @@
                             class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
                             Simple Card</h5>
                         <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iure vero inventore nostrum em
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iure vero inventore
+                            nostrum em
                             soluta at et vitae assumenda quidem
                             debitis, veritatis ex..</p>
                     </div>
                 </div>
                 <div
                     class="relative flex flex-col bg-clip-border bg-white text-gray-700 rounded-2xl shadow-lg shadow-gray-500/10">
-                    <div class="p-6 px-8 text-center"><button
+                    <div class="p-6 px-8 text-center">
+                        <button
                             class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-12 max-w-[48px] h-12 max-h-[48px] text-sm bg-gradient-to-tr from-red-600 to-red-400 text-white shadow-md shadow-red-500/20 hover:shadow-lg hover:shadow-red-500/40 active:opacity-[0.85] pointer-events-none mb-6 rounded-full"
                             type="button"><span
                                 class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"><svg
@@ -822,14 +828,16 @@
                         <h5
                             class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
                             Prety Card</h5>
-                        <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">Keep
+                        <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
+                            Keep
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Des lor reiciendis tempore illo,
                             corrupti debitis! Dolorem, accusantium. Nesciunt..</p>
                     </div>
                 </div>
                 <div
                     class="relative flex flex-col bg-clip-border bg-white text-gray-700 rounded-2xl shadow-lg shadow-gray-500/10">
-                    <div class="p-6 px-8 text-center"><button
+                    <div class="p-6 px-8 text-center">
+                        <button
                             class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-12 max-w-[48px] h-12 max-h-[48px] text-sm bg-gradient-to-tr from-teal-600 to-teal-400 text-white shadow-md shadow-teal-500/20 hover:shadow-lg hover:shadow-teal-500/40 active:opacity-[0.85] pointer-events-none mb-6 rounded-full"
                             type="button"><span
                                 class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"><svg
@@ -843,7 +851,8 @@
                             class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
                             Even more simple card</h5>
                         <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-                            Lorem ipsum, dolor sit amet consectetur adipisici st, officiis doloremque dolorum praesentium
+                            Lorem ipsum, dolor sit amet consectetur adipisici st, officiis doloremque dolorum
+                            praesentium
                             nihil? Soluta tempora ipsum suscipit?</p>
                     </div>
                 </div>
