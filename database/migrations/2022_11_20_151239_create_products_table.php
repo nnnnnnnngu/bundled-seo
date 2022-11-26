@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug');
             $table->decimal('price');
+            $table->text('description');
             $table->foreignId('plan_id');
+            $table->string('image');
             $table->softDeletes();
             $table->timestamps();
         });
