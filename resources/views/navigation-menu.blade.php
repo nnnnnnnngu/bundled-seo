@@ -17,6 +17,9 @@
                             {{ __('Dashboard') }}
                         </x-jet-nav-link>
                     @endauth
+                        <x-jet-nav-link href="{{ route('products.index') }}" :active="request()->routeIs('products.index')">
+                            {{ __('Products') }}
+                        </x-jet-nav-link>
                 </div>
             </div>
 
@@ -101,6 +104,9 @@
                     {{ __('Dashboard') }}
                 </x-jet-responsive-nav-link>
             @endauth
+                <x-jet-responsive-nav-link href="{{ route('products.index') }}" :active="request()->routeIs('products.index')">
+                    {{ __('Products') }}
+                </x-jet-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
