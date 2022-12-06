@@ -33,6 +33,11 @@
                             buy now
                         </a>
                     </div>
+                    <div class="my-12 text-center sm:text-left">
+                        visit here: <a href="{{$product->url}}" target="_blank"  class="text-blue-700 hover:underline">
+                            {{$product->url}}
+                        </a>
+                    </div>
 
                 </div>
             </div>

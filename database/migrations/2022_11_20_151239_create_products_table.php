@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
+            $table->string('url')->default('https://bundledseo.com');
             $table->decimal('price');
             $table->text('description');
             $table->foreignId('plan_id');

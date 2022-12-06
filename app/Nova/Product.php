@@ -48,6 +48,7 @@ class Product extends Resource
             ID::make(__('ID'), 'id')->sortable(),
             Image::make('image'),
             TEXT::make('title'),
+            TEXT::make('url')->rules(['url']),
             Slug::make('slug')->from('title'),
             Textarea::make('description'),
             TEXT::make('price'),
