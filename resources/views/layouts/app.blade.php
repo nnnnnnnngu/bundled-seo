@@ -20,7 +20,9 @@
 </head>
 <body class="font-sans antialiased" style="font-family: 'Quicksand', sans-serif">
 <x-jet-banner/>
-
+<div class="py-2 px-4 bg-gray-200">
+ your location is:   {{request()->session()->get('location')}}
+</div>
 <div class="min-h-screen ">
     @livewire('navigation-menu')
 

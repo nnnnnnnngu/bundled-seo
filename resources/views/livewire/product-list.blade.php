@@ -5,7 +5,7 @@
             <x-jet-button wire:click="$set('selectedPlan', '{{$plan->id}}')"
                 class="flex flex-col w-full h-36 justify-center items-center {{$plan->id == $selectedPlan ? 'bg-gray-600 transform scale-105 duration-150 ' : 'bg-gray-500'}} rounded p-4 cursor-pointer hover:opacity-75">
                 <div class="text-2xl font-bold text-white">{{$plan->title}}</div>
-                <div >$ {{$plan->price_monthly}} /mo</div>
+                <div >{{$plan->currency}} {{$plan->price_monthly}} /mo</div>
             </x-jet-button>
         @endforeach
     </div>
@@ -26,7 +26,7 @@
                         </a>
                     </div>
                     <div class="text-center">
-                        $ {{$product->price}}/m
+                        {{$product->currency}} {{$product->price}}/m
                     </div>
                 </div>
         @empty

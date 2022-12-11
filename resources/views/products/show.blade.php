@@ -20,7 +20,7 @@
                 </div>
 
                 <p class="text-center py-6 sm:text-left bg-gray-100 sm:bg-white rounded text-xl"> <span
-                        class="text-4xl font-bold">${{$product->price}}</span>/mo
+                        class="text-4xl font-bold">{{$product->currency}} {{$product->price}}</span>/mo
                 </p>
                 <div>
                     <p class="sm:max-w-sm text-xl">

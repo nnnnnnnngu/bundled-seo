@@ -62,7 +62,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
-        }
+        },
+        "platform-check": false
     },
     "repositories": [
         {
@@ -73,3 +74,5 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 }
+
+

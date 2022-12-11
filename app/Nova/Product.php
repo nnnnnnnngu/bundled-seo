@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Slug;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
@@ -51,7 +52,8 @@ class Product extends Resource
             TEXT::make('url')->rules(['url']),
             Slug::make('slug')->from('title'),
             Textarea::make('description'),
-            TEXT::make('price'),
+            Number::make('USD', 'price_usd')->min(0.1)->step(0.01),
+            Number::make('INR', 'price_inr')->min(0.1)->step(0.01),
             BelongsTo::make('plan')
         ];
     }
