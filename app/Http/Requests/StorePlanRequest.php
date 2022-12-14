@@ -13,7 +13,7 @@ class StorePlanRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,10 @@ class StorePlanRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required|string|max:255',
+            'price_monthly' => 'required|numeric|min:0',
+            'price_annually' => 'required|numeric|min:0',
+            'description' => 'required'
         ];
     }
 }

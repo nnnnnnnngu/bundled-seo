@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\PlanController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\LogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('main');
 
 Route::middleware([
     'auth:sanctum',
@@ -26,3 +29,13 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::resources(
+    [
+        'products' => Productcontroller::class
+    ]
+);
+
+//logs
+Route::get('add-to-log', [logController::class , 'myTestAddToLog']);
+Route::get('logActivity', [logController::class , 'logActivity']);

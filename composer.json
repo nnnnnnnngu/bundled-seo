@@ -11,7 +11,9 @@
         "laravel/jetstream": "^2.12",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "livewire/livewire": "^2.5"
+        "livewire/livewire": "^2.5",
+        "fideloper/proxy": "^4.2",
+        "laravel/nova": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -60,8 +62,17 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
-        }
+        },
+        "platform-check": false
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./nova"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
+
+
